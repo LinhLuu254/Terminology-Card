@@ -6,7 +6,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Hamburger</title>
+    <title>Terminology Card</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -41,10 +45,15 @@
         color: black;
         font-size: large;
       }
+
+      .navbar-toggler-icon{
+
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md" style= "background-color: #ceb888">
+    <nav class="navbar navbar-expand-md" style= "background-color: #ceb888" >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img
@@ -85,29 +94,55 @@
         </div>
       </div>
     </nav>
-    <div class="container d-flex">
+    <div class="container my-5 d-flex">
       <div class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-5 row-cols-xl-5">
-      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
-        <div class="card-header" style="background-color: #ceb888">
-          Save To Disk
-        </div>
-        <img
-          class="card-img"
-          src="images/savetodisk.jpg"
-          alt="Saving a file to disk"
-        />
-        <div class="card-body">
-          <div class="card-title" style="background-color: rgb(157, 150, 141)">
-            Permanent Save
+      
+        <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+          <div class="card-header" style="background-color: #ceb888">
+            Internet
           </div>
-          <div class="card-subtitle">Unit 1 - Digital Basis</div>
-          <p class="card-text">
-            Saving to disk means saving a file permanently, to an associated
-            disk.
-          </p>
-          <a href="#" class="card-link">click for extra details</a>
+          <img
+            class="card-img"
+            src="images/internet.jpg"
+            alt="internet"
+          />
+          <div class="card-body">
+            <div class="card-title" style="background-color: rgb(157, 150, 141)">
+              What is the Internet?
+            </div>
+            <div class="card-subtitle">Unit 4 - The Internet</div>
+            <p class="card-text">
+              The Internet (or internet)is a global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP)
+              to communicate between networks and devices.
+            </p>
+            <a href="#" class="card-link">Click for extra details</a>
+          </div>
         </div>
-      </div>
+
+         <!-- Copy and paste this section for another card
+        * put these card under "container d-flex"
+      -->
+
+        <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+          <div class="card-header" style="background-color: #ceb888">
+            Network
+          </div>
+          <img
+            class="card-img"
+            src="images/network.jpg"
+            alt="Network"
+          />
+          <div class="card-body">
+            <div class="card-title" style="background-color: rgb(157, 150, 141)">
+              What is a network?
+            </div>
+            <div class="card-subtitle">Unit 4 - The Internet</div>
+            <p class="card-text">
+              A network is a group of computers that can share information through interconnections.
+            </p>
+            <a href="#" class="card-link">Click for extra details</a>
+          </div>
+        </div>
 
       <!-- Copy and paste this section for another card
         * put these card under "container d-flex"
@@ -115,21 +150,22 @@
 
       <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
         <div class="card-header" style="background-color: #ceb888">
-          Save To Disk
+          Inter-connected Network
         </div>
         <img
           class="card-img"
-          src="iamges/savetodisk.jpg"
-          alt="Saving a file to disk"
+          src="images/topology.jpg"
+          alt="topology"
         />
         <div class="card-body">
           <div class="card-title" style="background-color: rgb(157, 150, 141)">
-            Permanent Save
+           Topology
           </div>
-          <div class="card-subtitle">Unit 1 - Digital Basis</div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
           <p class="card-text">
-            Saving to disk means saving a file permanently, to an associated
-            disk.
+            Interconnection network are used to connect nodes, where nodes can be a single processor or group of processors, to other nodes.
+            Interconnection networks can be categorized on the basis of their topology. 
+            Topology is the term used to describe how devices are connected and how messages flow from device to device.
           </p>
           <a href="#" class="card-link">click for extra details</a>
         </div>
@@ -141,22 +177,166 @@
 
       <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
         <div class="card-header" style="background-color: #ceb888">
-          Save To Disk
+          World Wide Web
         </div>
         <img
           class="card-img"
-          src="iamges/savetodisk.jpg"
-          alt="Saving a file to disk"
+          src="images/world-wide-web.png"
+          alt="world-wide-web"
         />
         <div class="card-body">
           <div class="card-title" style="background-color: rgb(157, 150, 141)">
-            Permanent Save
+            What is World Wide Web? 
           </div>
-          <div class="card-subtitle">Unit 1 - Digital Basis</div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
           <p class="card-text">
-            Saving to disk means saving a file permanently, to an associated
-            disk.
+            The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet.
           </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <!-- Copy and paste this section for another card
+        * put these card under "container d-flex"
+      -->
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          Browser
+        </div>
+        <img
+          class="card-img"
+          src="images/browsers.png"
+          alt="browsers"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            Web/Internet Browser
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            Web browser or Internet browser, a browser is a software program to present and explore content on the World Wide Web. 
+          </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          Browser add-on
+        </div>
+        <img
+          class="card-img"
+          src="images/add-on.png"
+          alt="Add-on"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            Browser Extension
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            A browser extension is a piece of software that adds features to your web browser or to programs you use in your browser. 
+            Each extension typically focuses on one function.
+          </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          Transmission media, copper cabling
+        </div>
+        <img
+          class="card-img"
+          src="images/copper.jpg"
+          alt="copper"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            Copper-based internet
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            A copper-based internet connection is the standard connection type that has been used historically. It works by sending an electrical signal down a copper cable.
+            <ul>
+              <li>Coaxial cabling</li>
+              <li>UTP cabling</li>
+              <li>STP cabling</li>
+            </ul>
+          </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          Transmission media, Fiber optical cabling
+        </div>
+        <img
+          class="card-img"
+          src="images/fiber.jpg"
+          alt="fiber"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            Fiber optical cabling
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            Optical-fiber cable is an assembly similar to an electrical cable but containing one or more optical fibers that are used to carry light. 
+            The optical fiber elements are typically individually coated with plastic layers and contained in a 
+            protective tube suitable for the environment where the cable is used.
+          </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          Transmission media, WiFi (802.11)
+        </div>
+        <img
+          class="card-img"
+          src="images/wifi.png"
+          alt="wifi"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            WiFi (802.11)
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            802.11 and 802.11x refers to a family of specifications developed by the IEEE for wireless LAN (WLAN) technology. 
+            802.11 specifies an over-the-air interface between a wireless client and a base station or between two wireless clients. 
+          </p>
+          <a href="#" class="card-link">click for extra details</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 200px; border: 3px solid rgb(55, 58, 54)">
+        <div class="card-header" style="background-color: #ceb888">
+          IP address - IPV4, IPV6
+        </div>
+        <img
+          class="card-img"
+          src="images/ip-address.jpg"
+          alt="ip-address"
+        />
+        <div class="card-body">
+          <div class="card-title" style="background-color: rgb(157, 150, 141)">
+            IP address 
+          </div>
+          <div class="card-subtitle">Unit 4 - The Internet</div>
+          <p class="card-text">
+            An Internet Protocol address (IP address) is a numerical label such as 192.0.2.1 that is connected to a computer network that uses the Internet Protocol for communication. 
+            An IP address serves two main functions: network interface identification and location addressing.
+          </p>
+
+          <ul>
+            <li>IPv4:  an IP address as a 32-bit number.</li>
+            <li>IPv6: using 128 bits for the IP address</li>
+          </ul>
           <a href="#" class="card-link">click for extra details</a>
         </div>
       </div>
