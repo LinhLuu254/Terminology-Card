@@ -1,0 +1,238 @@
+/*********************************************************************/
+/***** BEGIN DESIGN TOOLS THEME IMPORT & CUSTOMIZATION  **************/
+/*********************************************************************/
+/* Import statements need to be at the top of your CSS file */
+/* For Main CSS file */
+@import url(https://designtools.ciditools.com/css/themes.css);
+/* For Mobile app CSS file */
+/*@import url(https://designtools.ciditools.com/css/app.css);*/
+/* Institution color customizations */
+@import url(https://designtools.ciditools.com/css/inst_theme_overrides.css);
+/* Theme Colors */
+:root {
+  --dt-color-primary: #990000;
+  --dt-color-primary-contrast: #FFFFFF;
+  --dt-color-primary-dark-text: #990000;
+  --dt-color-secondary: #243142;
+  --dt-color-secondary-contrast: #FFFFFF;
+  --dt-color-secondary-dark-text: #243142;
+  --dt-color-accent: #006298;
+  --dt-color-accent-contrast: #FFFFFF;
+  --dt-color-graybg: #E6E6E6;
+  --dt-color-graybg-contrast: #000000;
+}
+/*********************************************************************/
+/***** END DESIGN TOOLS THEME IMPORT & CUSTOMIZATION   ***************/
+/*********************************************************************/
+
+
+/* 
+  General IU colors and logo handled in Theme Editor. 
+  More targeted styles, hiding specific buttons for example, remain here.
+*/
+
+/* TODO: Remove at some point */
+/* Hide Quick Check LTIv1.1 on Course Navigation tab & left nav */
+#nav_edit_tab_id_context_external_tool_147104,
+#left-side .context_external_tool_147104 {
+  display: none !important;
+}
+
+
+/* Hide the Canvas "Start a New Course" button */
+#start_new_course {
+  display: none !important;
+}
+
+
+/**
+ * Nav Tray
+ */
+
+/* Hide "Start a New Course" */
+#section-tabs a[href$="/external_tools/437553"],
+.profile-tray a[href$="/external_tools/437553"],
+/* Hide "Multicourse Message" */
+#section-tabs a[href$="/external_tools/374474"],
+.profile-tray a[href$="/external_tools/374474"] {
+  display: none !important;
+}
+
+
+/**
+ * Conversations
+ */
+#eds-multicourse-message {
+  margin-left: .25rem;
+  margin-right: .75rem;
+}
+
+/**
+ * Dashboard
+ */
+#right-side #eds-pending-student-eadds,
+#right-side #eds-pending-student-edrops,
+#right-side #lms_start_new_course {
+  width: 100%;
+  margin-top: .25rem;
+}
+/* Left align button text */
+#right-side #eds-pending-student-eadds > span,
+#right-side #eds-pending-student-edrops > span,
+#right-side #lms_start_new_course > span {
+  text-align: left;
+}
+
+/**
+ * All Courses
+ */
+.ic-Action-header__Secondary #eds-manage-courses {
+  margin-left: .375rem;
+}
+#eds-all-courses-actions > a {
+  margin: .125rem;
+}
+
+/**
+ * Course > Home
+ */
+#course_show_secondary #eds-pending-student-eadds,
+#course_show_secondary #eds-pending-student-edrops {
+  display: block;
+  width: 100%;
+  margin-top: .25rem;
+}
+
+/**
+ * Course > Announcements
+ */
+#eds-multicourse-announcement {
+  margin-left: .5rem;
+}
+
+/**
+ * Course > Content Migrations
+ */
+
+/*
+  Hide the "Import Blueprint Course settings" checkbox,
+  which appears when copying a course into a Blueprint course.
+*/
+.importBlueprintSettings {
+  display: none !important;
+}
+
+/**
+* Course > People
+*/
+#eds-photo-roster {
+  margin-right: .5rem;
+}
+#eds-bulk-remove-users {
+  float: right;
+  margin-right: .5rem;
+}
+#eds-roster-status-report {
+  font-weight: 700;
+  font-family: unset;
+}
+#eds-roster-status-report svg {
+  margin-right: .375rem;
+  font-weight: normal;
+}
+
+
+/**
+ * Course > Settings
+ */
+
+/* Hide the following buttons in the Course Settings subnav */
+
+/* Course Locker */
+#right-side a[data-tool-id="374776"],
+/* Blueprint Manager */
+#right-side a[data-tool-id="391972"],
+/* Reapply Default Template */
+#right-side a[data-tool-id="408965"],
+/* Delete this Course */
+#right-side a[href*="event=delete"],
+/* Conclude this Course */
+#right-side a[href*="event=conclude"] {
+  display: none !important;
+}
+
+/**
+ * Course > Syllabus
+ */
+ 
+/* Syllabus addendum styles */
+#eds-syllabus-addendum summary {
+  color: #006298;
+  outline: none;
+}
+#eds-syllabus-addendum summary::marker {
+  font-size: 1.75rem;
+}
+#eds-syllabus-addendum summary h2 {
+  font-size: 1.75rem;
+  display: inline;
+}
+.eds-syllabus-addendum-chunk {
+  margin-bottom: 2rem;
+}
+ 
+/**
+ * Profile > Settings
+ */
+/* Custom "Update Pronoun field" */
+#eds-pronoun-text {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+/* Hide the default "New Access Token" button */
+.add_access_token_link {
+  display: none !important;
+}
+/* Hide the external icon indicator on the custom "New Access Token" button */
+#eds-add-access-token img[role="presentation"],
+#eds-add-access-token .external_link_icon {
+  display: none !important;
+}
+
+/* Set the table headings on Profile > Settings to be vertically aligned */
+.profile_table th {
+  vertical-align: top;
+}
+
+/* Hide the 'star' next to the email addresses in the right column of the Profile > Settings page */
+td.email_meta > a { 
+  display: none !important;
+}
+ 
+ 
+ 
+/* Hide the original cross-listing buttons */
+.crosslist_link, .uncrosslist_link {display: none !important;}
+
+
+/* eDS styles, in support of course development */
+
+/* Give summary tags the pointer on hover */
+summary {
+  cursor: pointer;
+}
+
+/* hide page title. Requires DOM manipulation after postMessage to add the .eds-hide-page-title class */
+.eds-hide-page-title .page-title {
+  display: none;
+}
+
+/* Utility classes */
+
+/*https://css-tricks.com/snippets/css/clear-fix/*/
+.iu-eds-group-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
